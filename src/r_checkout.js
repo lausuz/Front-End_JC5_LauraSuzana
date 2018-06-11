@@ -31,7 +31,7 @@ class r_checkout extends Component {
                       </td>                
                       <td><center> Rp 950.000,00 </center></td>
                       <td><center> 1 </center></td>
-                      <td><center> Rp 950.000 </center></td>
+                      <td><center> Rp 950.000,00 </center></td>
                     </tr>
                     <tr>
                       <td> 
