@@ -27,13 +27,13 @@ class c_home_header extends Component {
             </div>
 
             <ul className="nav navbar-nav">                
-              <li className="active"><Link to="#nol">Home</Link></li>
-              <li><Link to="#satu">About Us</Link></li>
-              <li><Link to="#dua">Our Menu & Categories</Link></li>
-              <li><Link to="#tiga">Contact Us</Link></li>
-              <li><Link to="#">Login & Register</Link></li>
-              <li style={{width:'100px'}}><Link to="#"><img src={require("./images/cart.png")} alt="cart" style={{width:'30%'}}/>&nbsp;&nbsp;Cart</Link></li>
-            </ul>
+            <li className="active"><a href="#nol">Home</a></li>
+            <li><a href="#satu">About Us</a></li>
+            <li><a href="#dua">Our Menu & Categories</a></li>
+            <li><a href="#tiga">Contact Us</a></li>
+            <li><Link to="#">Login & Register</Link></li>
+            <li style={{width:'100px'}}><Link to="#"><img src={require("./images/cart.png")} alt="cart" style={{width:'30%'}}/>&nbsp;&nbsp;Cart</Link></li>
+          </ul>
 
             <form className="navbar-form navbar-left" action="/action_page.php">
               <div className="input-group">
