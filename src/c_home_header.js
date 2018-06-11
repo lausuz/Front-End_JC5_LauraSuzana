@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 import './HealthyUKitchen.css';
 
-import satu from './c_home_content2/#satu';
-import dua from './c_home_content2/#dua';
-import tiga from './c_home_footer/#tiga';
-
 class c_home_header extends Component {
     render(){
         return (
@@ -27,7 +23,7 @@ class c_home_header extends Component {
             </div>
 
             <ul className="nav navbar-nav">                
-            <li className="active"><a href="#nol">Home</a></li>
+            <li><a href="#nol">Home</a></li>
             <li><a href="#satu">About Us</a></li>
             <li><a href="#dua">Our Menu & Categories</a></li>
             <li><a href="#tiga">Contact Us</a></li>

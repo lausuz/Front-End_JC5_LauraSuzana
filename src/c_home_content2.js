@@ -10,7 +10,7 @@ class c_home_content extends Component {
             <div>
 
             <div style={{height:'auto'}}>
-                    <div class="row gambar-slide" id={satu} style={{paddingTop:'100px',paddingBottom:'200px'}}>
+                    <div class="row gambar-slide" id="satu" style={{paddingTop:'100px',paddingBottom:'200px'}}>
 
                         <div class="col-md-6 col-xs-6 col-sm-6">
                             <center><img class="carousel-control" src={require("./images/risoles.JPG")} alt="food" style={{width:'80%',padding:'20px',marginLeft:'60px'}}/></center>
@@ -28,7 +28,7 @@ class c_home_content extends Component {
 
 
                     <div style={{height:'auto'}}>
-                    <div  class="row gambar-slide" id={dua} style={{paddingTop:'200px',paddingBottom:'200px'}}>
+                    <div  class="row gambar-slide" id="dua" style={{paddingTop:'200px',paddingBottom:'200px'}}>
 
                         <h4 class="about"><center>Please check, what do you need here ? </center></h4><br/>
                         <div class="col-md-6">
