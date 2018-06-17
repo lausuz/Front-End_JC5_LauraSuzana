@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin HealthyUKtichen</title>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>    
+    <link rel="stylesheet" type="text/css" media="screen" href="adminHealthy.css" />    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+
+              <img src="images/stlobeli.png" width="35px" height="35px" style="float:left;margin-left:5px;margin-top:10px">        
+              <a class="navbar-brand" href="#">
+                  <span style="margin-left:5px">Healthy U Kitchen </span><br>                
+              </a>
+
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+              <li><a href="#">Dashboard</a></li>
+
+              <li>                
+                  <a class="dropdown-toggle" data-toggle="dropdown">Menu
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header"> Customer </li>
+                    <li><a href="#"> Our Customers </a></li>
+                    <li class="dropdown-header"> Product </li>
+                    <li><a href="#">Our Products </a></li>
+                    <li><a href="#">Add Category</a></li>
+                    <li><a href="#">Add Product</a></li>
+                    <li class="dropdown-header">Invoice</li>
+                    <li><a href="#"> Customer's Invoice </a></li>
+                  </ul>
+              </li>               
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+          <div class="row">                        
+             <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="info2">
+                  <span class="tulisan3" style="color:darkolivegreen;padding-top:15px">DASHBOARD > Invoice List</span>
+          </div>            
+          </div>
+          
+    
+          <div class="row">                        
+            <div class="col-md-11" style="margin-left:4%">
+          <div class="panel panel-default">
+            <div class="panel-heading"><center> <b> INVOICE </b></center></div>
+            <div class="panel-body">
+    
+                <div class="container">                                    
+                    <table class="table table-bordered table-striped">
+    
+                      <thead>
+                        <tr>
+                          <th>Number</th>
+                          <th>Invoice Number</th>
+                          <th> Name of Customer </th>
+                          <th> Date of Invoice </th>                          
+                          <th> Total Value </th>                          
+                          <th>Action</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+    
+                      <tbody id="myTable">
+                        <tr>
+                            <td></td>
+                            <td><input class="form-control" id="myInput" type="text" placeholder="Search.."></td>
+                            <td><input class="form-control" id="myInput" type="text" placeholder="Search.."></td>
+                            <td><input class="form-control" id="myInput" type="text" placeholder="Search.."></td>
+                            <td><input class="form-control" id="myInput" type="text" placeholder="Search.."></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a>INV2803201801</a></td>
+                            <td>Doe</td>
+                            <td>28 March 2018</td>
+                            <td>Rp1.800.000</td>
+                            <td><button type="button"> x remove</button> &nbsp;&nbsp; <button type="button"> change </button></td>
+                            <td>Customer has received</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a>INV2803201802</a></td>
+                            <td>Doe</td>
+                            <td>28 March 2018</td>
+                            <td>Rp1.800.000</td>
+                            <td><button type="button"> x remove</button> &nbsp;&nbsp; <button type="button"> change </button></td>
+                            <td>Customer has received</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a>INV2803201803</a></td>
+                            <td>Mike</td>
+                            <td>28 March 2018</td>
+                            <td>Rp1.800.000</td>
+                            <td><button type="button"> x remove</button> &nbsp;&nbsp; <button type="button"> change </button></td>
+                            <td>Customer has received</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a>INV2803201804</a></td>
+                            <td>Meri</td>
+                            <td>28 March 2018</td>
+                            <td>Rp1.800.000</td>
+                            <td><button type="button"> x remove</button> &nbsp;&nbsp; <button type="button"> change </button></td>
+                            <td>Customer has received</td>
+                        </tr>
+                      </tbody>
+    
+                    </table>               
+                    
+                  </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        
+          <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+            </script>
+    
+            <footer class="col-md-12" style="background-color:grey;height:100px">
+                <center><p class="tulisan3">@2018 Healthy U Kitchen</p></center>
+            </footer>
+    
+        </html>

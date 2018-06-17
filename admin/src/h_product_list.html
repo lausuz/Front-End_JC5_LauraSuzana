@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin HealthyUKtichen</title>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>    
+    <link rel="stylesheet" type="text/css" media="screen" href="adminHealthy.css" />    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+
+              <img src="images/stlobeli.png" width="35px" height="35px" style="float:left;margin-left:5px;margin-top:10px">        
+              <a class="navbar-brand" href="#">
+                  <span style="margin-left:5px">Healthy U Kitchen </span><br>                
+              </a>
+
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+              <li><a href="#">Dashboard</a></li>
+
+              <li>                
+                  <a class="dropdown-toggle" data-toggle="dropdown">Menu
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header"> Customer </li>
+                    <li><a href="#"> Our Customers </a></li>
+                    <li class="dropdown-header"> Product </li>
+                    <li><a href="#">Our Products </a></li>
+                    <li><a href="#">Add Category</a></li>
+                    <li><a href="#">Add Product</a></li>
+                    <li class="dropdown-header">Invoice</li>
+                    <li><a href="#"> Customer's Invoice </a></li>
+                  </ul>
+              </li>               
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-md-2" style="float:left">
+          <div class="panel" style="height:500px">                          
+        </div>
+      </div>
+      
+
+      <div class="row">                        
+         <div class="col-md-8 col-sm-8 col-xs-8">
+              <div class="info2">
+              <span class="tulisan3" style="color:darkolivegreen;padding-top:15px">DASHBOARD > Product List</span>
+      </div>            
+      </div>            
+
+      <div class="col-md-8">
+          <div class="panel panel-default">
+              <div class="panel-heading"><center>Product Detail</center></div>
+              <div class="panel-body"><b><center> Healthy Meals Package </center></b></div><br>
+
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                        
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <center><img src="images/hm1.png" alt="Healthy Meal Example"></center>
+                            </div>
+                        
+                            <div class="item">
+                              <center><img src="images/hm2.png" alt="Healthy Meal Example"></center>
+                            </div>
+                        
+                            <div class="item">
+                              <center><img src="images/hm3.png" alt="Healthy Meal Example"></center>
+                            </div>
+                          </div>
+                        
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div><br>
+
+                        <center><h4 style="text-align:justify;line-height:30px;padding-left:30px;padding-right:30px">
+                          Adalah menu yang kami rancang untuk memenuhi gizi anda. Healthy Meals, tidak akan membuat berat badan anda turun, karena kami hanya mengganti menu harian anda dengan makanan yang memenuhi standar gizi sehari anda dan makanan yang lebih sehat bagi pencernaan dan seluruh tubuh. Disetiap sajian kami juga mengganti nasi putih dengan nasi merah yang lebih bergizi menurut para ahli.</h4></center><br>
+                      
+
+                      <p>Tersedia beberapa pilihan paket untuk menu ini dari kami :
+                          </p><br>
+
+          <table class="table">
+              <tr>
+                  <td>
+                      Healthy Meals Package for Student
+                  </td>
+                  <td>
+                      Rp 15.000,00
+                  </td>
+                  <td>
+                      <button type="button" class="btn btn-info">Change</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      Healthy Meals Package Regular
+                  </td>
+                  <td>
+                      Rp 50.000,00
+                  </td>
+                  <td>
+                      <button type="button" class="btn btn-info">Change</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p>Healthy Meals Package for 1 Week,</p> 
+                      <p>3 times per day (7 days exclude Sunday)</p>
+                  </td>
+                  <td>
+                      Rp 950.000,00
+                  </td>
+                  <td>
+                      <button type="button" class="btn btn-info">Change</button>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p>Healthy Meals Package for 2 Weeks,</p> 
+                      <p>3 times per day (14 days exclude Sunday)</p>
+                  </td>
+                  <td>
+                      Rp 1.850.000,00
+                  </td>
+                  <td>
+                      <button type="button" class="btn btn-info">Change</button>
+                  </td>
+              </tr>
+
+          </table>
+
+          <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+
+          <br><br><br>
+                  <center>
+                  <p><a class="btn btn-primary btn-lg" href="#" role="button"> + ADD CATEGORY </a></p>
+                  <p><a class="btn btn-primary btn-lg" href="#" role="button"> + ADD PRODUCT </a></p>
+                  </center>
+
+
+      </div>
+      </div>
+
+      <footer class="col-md-12 col-sm-12 col-xs-12" style="background-color:grey;height:100px">
+          <center><p class="tulisan3">@2018 Healthy U Kitchen</p></center>
+        </footer>
